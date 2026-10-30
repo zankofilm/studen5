@@ -1,0 +1,244 @@
+/* V1.3 — consistent feminine design across ALL legacy student modules in the installed APK.
+ * Visual styles only. Never hide exam inputs, policy messages, or actual server values. */
+body.msy-girl-app:not(.dark){
+ --bg:#fcf9ff;--card:#fff;--text:#30245b;--muted:#85769d;
+ --brand:#8151d2;--brand2:#a471eb;--line:#eee5f8;
+ --primary:#8151d2;--surface-soft:#f7f1ff;
+ --shadow:0 9px 26px rgba(110,75,160,.075);
+}
+body.msy-girl-app .page:not(.question-screen){padding:14px 13px 32px;max-width:760px}
+body.msy-girl-app .msy-screen-head{display:flex;align-items:center;justify-content:space-between;gap:10px;direction:rtl;background:linear-gradient(125deg,#fce9f6,#eee7ff);border:1px solid #efdff9;border-radius:24px;padding:19px 18px;margin-bottom:18px;box-shadow:0 7px 23px #8f67bb14}
+body.msy-girl-app .msy-screen-head h1{font-size:19px;line-height:1.7;margin:4px 0;color:#32216a}
+body.msy-girl-app .msy-screen-head p{color:#74638c;font-size:11px;line-height:1.9;margin:0}
+body.msy-girl-app .msy-screen-caption{color:#ab70cf;font-size:10px;font-weight:750}
+body.msy-girl-app .msy-screen-decoration{font-size:28px;color:#b77edb;background:#fff9;border-radius:16px;min-width:52px;height:52px;display:grid;place-items:center}
+body.msy-girl-app .section-title{margin:16px 2px 12px;gap:8px}
+body.msy-girl-app .section-title h3{color:#342565;font-size:15px;font-weight:850;line-height:1.75}
+body.msy-girl-app .section-title small,body.msy-girl-app .muted{color:#817597}
+body.msy-girl-app .card,body.msy-girl-app .list-item,body.msy-girl-app .exam-card,body.msy-girl-app .result-card,body.msy-girl-app .book-card,body.msy-girl-app .question-card{
+ background:#fff;border:1px solid #ede5f7;box-shadow:0 6px 20px #7b5bb30e;border-radius:21px;color:#31265a;
+}
+body.msy-girl-app .card h2,body.msy-girl-app .card h3,body.msy-girl-app .result-card b,body.msy-girl-app .exam-title b{color:#392573}
+body.msy-girl-app .stat-card{background:linear-gradient(135deg,#fff,#f9f4ff);text-align:center}
+body.msy-girl-app .stat-card b{color:#8954d9;font-size:23px}
+body.msy-girl-app .stat-icon,body.msy-girl-app .book-icon,body.msy-girl-app .list-icon,body.msy-girl-app .exam-subject{background:linear-gradient(140deg,#f4eaff,#feeaf6);color:#9561d6;border-radius:15px}
+body.msy-girl-app .btn,body.msy-girl-app .chip,body.msy-girl-app .exam-card button,body.msy-girl-app #page button{font-family:inherit}
+body.msy-girl-app .btn{border-radius:15px;font-size:12px}
+body.msy-girl-app .btn.primary{background:linear-gradient(125deg,#9b70e8,#794cd0);box-shadow:0 8px 17px #9061d02c;color:#fff}
+body.msy-girl-app .btn.secondary{color:#6c41b4;background:#f2eaff;border:1px solid #e7d9fb}
+body.msy-girl-app .chip{background:#f0e9fc;color:#7546bc;border:1px solid #e9dbfa;border-radius:99px}
+body.msy-girl-app .chip.warn{background:#fff5e8;color:#a37328;border-color:#fae8ce}
+body.msy-girl-app .chip.ok{background:#e9f9f5;color:#228877;border-color:#d2eee6}
+body.msy-girl-app .offline-banner{background:#fff5e9;color:#906323}
+body.msy-girl-app .sync-banner{background:#eff9f5;color:#367963}
+body.msy-girl-app .exam-subject{width:45px;height:45px}
+body.msy-girl-app .exam-actions{gap:9px;flex-wrap:wrap}
+body.msy-girl-app .exam-actions .btn{min-height:42px}
+body.msy-girl-app .book-grid{gap:10px}
+body.msy-girl-app .book-card{background:linear-gradient(145deg,#fff,#fbf6ff)}
+body.msy-girl-app .schedule th{background:#8959d9}
+body.msy-girl-app .schedule td{background:#f0eaff}
+body.msy-girl-app .section-title button{color:#8655ce}
+body.msy-girl-app .modal{background:rgba(29,17,61,.55)}
+body.msy-girl-app .modal-sheet{background:#fffaff;border:1px solid #eee2f7;box-shadow:0 -9px 35px #32205924}
+body.msy-girl-app .close-btn{background:#f4eafa;color:#8153be}
+body.msy-girl-app input:not([type="checkbox"]):not([type="radio"]),body.msy-girl-app select,body.msy-girl-app textarea{border:1px solid #e3d9f2;border-radius:15px;background:#fff;color:#3a2a6d;max-width:100%}
+body.msy-girl-app input:focus-visible,body.msy-girl-app select:focus-visible,body.msy-girl-app textarea:focus-visible,body.msy-girl-app button:focus-visible{outline:3px solid #9c75e6;outline-offset:2px}
+body.msy-girl-app input[type="checkbox"],body.msy-girl-app input[type="radio"]{accent-color:#8757d6}
+body.msy-girl-app .question-screen{--brand:#8055cf;--brand2:#9568dc;--line:#eadff7;--bg:#fcf9ff}
+body.msy-girl-app .question-screen .exam-toolbar{background:#fcf9ff}
+body.msy-girl-app .question-screen .option.selected{background:#f1e9ff;border-color:#9873d9}
+body.msy-girl-app .question-screen .option{background:#fff;border-color:#e9e0f6;min-height:52px}
+body.msy-girl-app .question-screen .question-nav button.answered{background:#ede4ff}
+body.msy-girl-app .question-screen .timer{color:#a44f79}
+body.msy-girl-app .upload-zone{background:#faf4ff;border:2px dashed #ceb7e9}
+body.msy-girl-app .profile-photo-v37{background:#f2e9fe;border-color:#e1d3f6}
+body.msy-girl-app .profile-readonly-grid-v37>div{background:#faf7ff;border-color:#e8ddf6}
+body.msy-girl-app .result-summary>div,body.msy-girl-app .family-report-grid-v22>div{background:#f8f2ff;border-color:#e9def5}
+body.msy-girl-app .p56-item,body.msy-girl-app .p57-calendar,body.msy-girl-app [class*="p58-"] .card{border-radius:18px}
+body.msy-girl-app .p56-item:nth-child(odd){background:#fcf2fa}
+body.msy-girl-app .p56-item:nth-child(even){background:#f3efff}
+body.msy-girl-app .p56-item-icon{background:#eee2fe;color:#8553d1}
+body.msy-girl-app .p57-day.is-selected{background:#8e60d7;color:#fff}
+/* Group the ORIGINAL button elements: click handlers and underlying data are unchanged. */
+body.msy-girl-app .msy-menu-groups{display:grid;gap:14px;margin-bottom:20px}
+body.msy-girl-app .msy-menu-section{background:#fff;border:1px solid #efe3f8;border-radius:22px;padding:15px 12px;box-shadow:0 7px 20px #6b42a510}
+body.msy-girl-app .msy-menu-group-header{display:flex;justify-content:space-between;align-items:start;gap:8px;margin:0 4px 12px;flex-wrap:wrap}
+body.msy-girl-app .msy-menu-group-header h3{margin:0;color:#38276f;font-size:14px}
+body.msy-girl-app .msy-menu-group-header small{color:#8c7fa1;font-size:10px}
+body.msy-girl-app .msy-menu-group-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+body.msy-girl-app .msy-menu-group-grid .more-item{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:86px;padding:11px 5px;background:linear-gradient(135deg,#fbf6ff,#f8eefe);border:1px solid #eee2fb;border-radius:17px}
+body.msy-girl-app .msy-menu-section:nth-child(2) .more-item{background:linear-gradient(135deg,#fff3f9,#f9eefc)}
+body.msy-girl-app .msy-menu-section:nth-child(3) .more-item{background:linear-gradient(135deg,#f7f3ff,#f1f8ff)}
+body.msy-girl-app .more-item span{font-size:24px}
+body.msy-girl-app .more-item small{font-size:11px;color:#5c4684;font-weight:750;line-height:1.6}
+body.msy-girl-app .msy-group-shortcut{min-width:0;min-height:86px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border-radius:17px;border:1px solid #eadefa;background:linear-gradient(130deg,#fff1f9,#f3eaff);color:#6744a6;font-size:11px;font-weight:750;text-align:center}
+body.msy-girl-app .msy-short-emoji{font-size:25px}
+body.msy-girl-app .msy-group-shortcut span:last-child{display:none}
+body.msy-girl-app .msy-menu-group-grid [hidden]{display:none!important}
+@media(max-width:380px){body.msy-girl-app .msy-menu-group-grid{gap:6px}body.msy-girl-app .msy-menu-group-grid .more-item{min-height:84px}body.msy-girl-app .msy-menu-group-grid .more-item small{font-size:10px}}
+@media(prefers-reduced-motion:reduce){body.msy-girl-app *{scroll-behavior:auto!important}}
+
+/* Login / account setup: same brand without altering the existing authentication forms. */
+body.msy-girl-login .auth{background:linear-gradient(155deg,#f6eaff,#fff7fc 60%,#f0eaff)!important}
+body.msy-girl-login .auth-card{border:1px solid #eadcf7;border-radius:29px;box-shadow:0 16px 44px #7b52bb19;background:#fff!important}
+body.msy-girl-login .brand-mark{background:linear-gradient(135deg,#a780e5,#8052cd);color:#fff;border-radius:22px}
+body.msy-girl-login .brand-row h1{color:#402974}
+body.msy-girl-login .brand-row p{color:#89799e}
+body.msy-girl-login .auth .connection{border-radius:15px}
+body.msy-girl-login .auth .field input,body.msy-girl-login .auth .field select{background:#fdfaff;border:1px solid #e7d6f8;color:#35265c}
+body.msy-girl-login .auth .btn.primary{background:linear-gradient(125deg,#a076ec,#7e50d3);color:#fff;border-radius:16px}
+#p58Dialog .p58-box{border-radius:23px!important;box-shadow:0 15px 38px #563d7e29}
+#p58Dialog #p58Messages{background:#f9f4fe!important;border-radius:17px!important}
+#p58Dialog .p58-msg.own{background:#f0e2ff!important}
+#p58Dialog #p58Form button{background:linear-gradient(120deg,#9c74e9,#8053d4)!important;border-radius:13px!important}
+
+/* V1.6 — FINAL EXAM SEND BUTTON: mobile-p28.css forces .app .bottom-nav
+   display:flex!important (z-index 999), which wins over legacy .hidden and
+   covers #finishExamBtn. Restore the semantic hidden state and independently
+   hide the bar whenever the real web exam screen is active. APK CSS only. */
+body.msy-girl-app .app #bottomNav.hidden,
+body.msy-girl-app .app #page.question-screen + #bottomNav {
+ display:none!important;
+ visibility:hidden!important;
+ pointer-events:none!important;
+}
+/* Keep the ORIGINAL review/send control visible, not a duplicate button.
+   Do not touch answer storage, timers, consent dialogs or server submission. */
+body.msy-girl-app #page.question-screen {
+ padding-bottom:calc(174px + var(--safe-bottom, 0px) + env(safe-area-inset-bottom, 0px))!important;
+}
+body.msy-girl-app #page.question-screen .fixed-submit {
+ position:fixed!important;
+ box-sizing:border-box;
+ z-index:1050!important;
+ left:max(12px, env(safe-area-inset-left, 0px))!important;
+ right:max(12px, env(safe-area-inset-right, 0px))!important;
+ bottom:calc(10px + var(--v71-keyboard-inset, 0px) + env(safe-area-inset-bottom, 0px))!important;
+ width:auto!important;
+ max-width:736px!important;
+ margin:0 auto!important;
+ transform:none!important;
+ padding:11px;
+ border:1px solid #e9dcfa;
+ border-radius:19px;
+ background:#fffaff;
+ box-shadow:0 8px 28px rgba(63,35,112,.21);
+ visibility:visible!important;
+ pointer-events:auto!important;
+}
+body.msy-girl-app #page.question-screen .fixed-submit #finishExamBtn {
+ display:block!important;
+ width:100%!important;
+ min-height:53px!important;
+ padding:12px 10px!important;
+ border-radius:14px!important;
+ font-size:14px!important;
+ font-weight:800!important;
+ color:#fff!important;
+ background:linear-gradient(115deg,#9e6fe4,#7448d0)!important;
+ visibility:visible!important;
+}
+/* On review step the actual confirm button remains inside the real modal.
+   Its existing onClick remains authoritative (no automatic submission). */
+body.msy-girl-app #modal:not(.hidden) .modal-sheet:has(.v70-review-actions) {
+ padding-bottom:calc(16px + env(safe-area-inset-bottom, 0px))!important;
+}
+body.msy-girl-app #modal .v70-review-actions {
+ position:sticky;
+ bottom:0;
+ z-index:3;
+ padding:12px 2px calc(12px + env(safe-area-inset-bottom, 0px));
+ margin:12px -2px -2px;
+ background:#fffaff;
+ border-top:1px solid #eadff8;
+}
+body.msy-girl-app #modal .v70-review-actions #v70ConfirmSubmit {
+ min-height:50px;
+ background:linear-gradient(115deg,#9e6fe4,#7448d0);
+ color:#fff;
+}
+
+/* V1.5 — Android-only exam intro overlay fix.
+   Legacy mobile-p28.css forces #bottomNav to z-index:999 but modal was only z-index:40.
+   Keep the REAL exam start button and its existing onClick handler; do not alter timing or answers. */
+body.msy-girl-app #modal:not(.hidden) {
+ z-index:2000!important;
+}
+body.msy-girl-app #modal:not(.hidden) .modal-sheet {
+ box-sizing:border-box;
+ overflow-x:hidden;
+ overflow-y:auto!important;
+ overscroll-behavior-y:contain;
+ -webkit-overflow-scrolling:touch;
+ max-height:calc(100vh - 12px);
+ max-height:calc(100dvh - 12px);
+}
+body.msy-girl-app #modal.msy-exam-intro-visible .modal-sheet {
+ max-height:calc(100vh - 6px)!important;
+ max-height:calc(100dvh - 6px)!important;
+ padding-bottom:calc(104px + env(safe-area-inset-bottom, 0px))!important;
+}
+body.msy-girl-app.msy-exam-intro-v15 .app #bottomNav {
+ visibility:hidden!important;
+ pointer-events:none!important;
+}
+body.msy-girl-app #modal .msy-exam-start-footer-v15 {
+ box-sizing:border-box;
+ position:fixed;
+ left:0;
+ right:0;
+ bottom:0;
+ z-index:2010;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+ background:#fffaff;
+ border-top:1px solid #eadcf8;
+ box-shadow:0 -9px 23px rgba(78,47,127,.15);
+ direction:rtl;
+}
+body.msy-girl-app #modal .msy-exam-start-footer-v15 #startExamBtn {
+ display:block!important;
+ box-sizing:border-box;
+ width:min(100%,620px)!important;
+ min-height:54px!important;
+ padding:12px 18px!important;
+ margin:0!important;
+ border-radius:15px!important;
+ background:linear-gradient(120deg,#9e71e8,#7548d1)!important;
+ color:white!important;
+ font-size:15px!important;
+ font-weight:800!important;
+ line-height:1.5!important;
+ visibility:visible!important;
+}
+
+/* V1.10 — visible, byte-aware exam submission progress in Android WebView. */
+body.msy-girl-app #modal:not(.hidden):has(.v72-submit-progress){
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ padding:18px!important;box-sizing:border-box;
+}
+body.msy-girl-app #modal:not(.hidden):has(.v72-submit-progress) .modal-sheet{
+ box-sizing:border-box!important;width:min(100%,430px)!important;max-width:430px!important;
+ max-height:none!important;margin:auto!important;padding:0!important;overflow:hidden!important;
+ border-radius:25px!important;background:#fffaff!important;
+}
+body.msy-girl-app #modal .v72-submit-progress{
+ direction:rtl;display:flex;flex-direction:column;gap:19px;padding:25px 21px 23px;
+ color:#39266e;text-align:right;
+}
+body.msy-girl-app #modal .v72-submit-progress-head{display:flex;align-items:center;gap:13px;min-width:0}
+body.msy-girl-app #modal .v72-submit-progress-head>div{min-width:0;flex:1}
+body.msy-girl-app #modal .v72-submit-progress h3{font-size:17px;line-height:1.7;margin:0 0 5px;color:#342164}
+body.msy-girl-app #modal .v72-submit-progress p{font-size:12px;line-height:1.9;margin:0;color:#77658f;overflow-wrap:anywhere}
+body.msy-girl-app #modal .v72-submit-progress-spinner{display:block;flex:0 0 37px;width:37px;height:37px;border:4px solid #eadcfb;border-top-color:#8e5bd8;border-radius:50%;animation:v72SubmitSpin .8s linear infinite}
+body.msy-girl-app #modal .v72-submit-progress-spinner[hidden]{display:none}
+body.msy-girl-app #modal .v72-submit-progress-row{display:flex;align-items:center;gap:12px}
+body.msy-girl-app #modal .v72-submit-progress-track{position:relative;overflow:hidden;flex:1;height:13px;border-radius:99px;background:#eee5fa;box-shadow:inset 0 1px 2px #5d43891a}
+body.msy-girl-app #modal .v72-submit-progress-track i{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#b183f0,#8050d2);transition:width .16s linear}
+body.msy-girl-app #modal .v72-submit-progress-row>b{flex:0 0 47px;text-align:left;direction:ltr;font-size:15px;font-variant-numeric:tabular-nums;color:#7950bf}
+body.msy-girl-app #modal .v72-submit-progress-note{font-size:11px;line-height:1.9;color:#8c7ba1;border-top:1px solid #f0e7fa;padding-top:12px}
+@keyframes v72SubmitSpin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){body.msy-girl-app #modal .v72-submit-progress-spinner{animation:none}body.msy-girl-app #modal .v72-submit-progress-track i{transition:none}}

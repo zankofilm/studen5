@@ -1,0 +1,11 @@
+مدرسه‌یار دانش‌آموز — نسخه ۱.۱۱.۰
+
+بررسی‌های خودکار نهایی:
+- node --check server-integration/INSTALL-ROOT/server.mjs: موفق
+- node --check server-integration/INSTALL-ROOT/shared/mobile-push.mjs: موفق
+- node --check server-integration/INSTALL-ROOT/student/app.js: موفق
+- node --test tests/*.test.mjs: ۵۲ تست موفق، ۰ ناموفق
+
+محدودیت تأیید:
+- Android SDK و Gradle در محیط اجرا در دسترس نبودند؛ APK در این محیط ساخته نشد.
+- اعلان سیستمی و گزارش داخل برنامه باید پس از نصب APK جدید و استقرار پچ وب روی گوشی/هاست واقعی آزمایش شوند.
